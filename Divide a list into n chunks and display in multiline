@@ -1,0 +1,21 @@
+# Lets take a list in variable x and chunks in variable k
+x = [1,2,3,4,5,6,7,8,9,10,11]
+k = 4
+list1 = []
+
+# Display the list till k until the chunks length is greater than number of elements left in the list.
+while len(x)>=k:
+    list1 = list(range(x[0],x[k]))
+    x = x[k:] # Reinstate the elements in x which are read
+    print(list1)
+
+else:
+    print(x)
+    
+
+
+
+# Output:
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11]
